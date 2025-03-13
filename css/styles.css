@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: hsl(255, 20%, 95%);
@@ -13,12 +14,12 @@ h1 {
 }
 
 button {
-  background-color: #53917e;
+  background-color: transparent;
 }
 
 nav {
   width: 60%;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 50px;
 }
 
@@ -59,10 +60,36 @@ section {
   width: 30%;
   margin: 0 auto;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
 }
 
 section.active {
   display: block;
   opacity: 1;
+}
+
+#link-indicator {
+  position: absolute;
+  bottom: -30px;
+  left: -20px;
+  font-size: 150px;
+  letter-spacing: 20px;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #0a0a0a;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#link-indicator.fade-in {
+  opacity: 1;
+}
+
+#home {
+  cursor: pointer;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin: -2px 30px 0px 0px;
 }
