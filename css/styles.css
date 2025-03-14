@@ -19,8 +19,8 @@ button {
 
 nav {
   width: 60%;
-  margin: 30px auto;
-  padding: 50px;
+  margin: auto;
+  padding: 80px 50px;
 }
 
 nav ul {
@@ -61,6 +61,10 @@ section {
   margin: 0 auto;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section.active {
@@ -70,7 +74,7 @@ section.active {
 
 #link-indicator {
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   left: -20px;
   font-size: 150px;
   letter-spacing: 20px;
