@@ -20,6 +20,7 @@ button {
 h3 {
   font-weight: normal;
   line-height: 30px;
+  margin: 5px;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav ul li a.active {
 
 section {
   display: none;
-  width: 50vw;
+  width: 45vw;
   min-width: 450px;
   margin: 0 auto;
   opacity: 0;
@@ -71,7 +72,6 @@ section {
 }
 
 section.active {
-  display: block;
   opacity: 1;
 }
 
@@ -99,8 +99,8 @@ section.active {
 #link-indicator {
   font-family: "Spline Sans Mono", monospace;
   position: absolute;
-  bottom: -30px;
-  right: -20px;
+  bottom: -28px;
+  right: -18px;
   font-size: 120px;
   font-weight: 100;
   letter-spacing: 6px;
@@ -139,4 +139,59 @@ section.active {
   left: 20px;
   bottom: -20px;
   height: 120px;
+}
+
+.bio-section {
+  display: block;
+  gap: 10px;
+  margin: 30px 0px;
+}
+
+.cv-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 40px;
+  font-size: 1em;
+  color: hsl(255, 20%, 95%);
+  background-color: #0a0a0a;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #333;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-button {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 40px;
+  font-size: 1em;
+  color: #0a0a0a;
+  background-color: hsl(255, 20%, 95%);
+  text-decoration: none;
+  border-radius: 50px;
+  border: solid 1px #0a0a0a;
+  transition: transform 0.2s ease;
+}
+
+.contact-button img {
+  height: 30px;
+}
+
+.contact-button:hover {
+  transform: scale(1.02);
 }
