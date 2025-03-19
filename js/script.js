@@ -2,6 +2,7 @@
 const navLinks = document.querySelectorAll("nav ul li a");
 const sections = document.querySelectorAll("section");
 const linkIndicator = document.getElementById("link-indicator");
+const homeButton = document.getElementById("home"); // Get the home button
 
 // Function to show the selected section and hide the others
 function showSection(sectionId) {
@@ -51,8 +52,24 @@ navLinks.forEach((link) => {
   });
 });
 
-// Show the default section (Bio) on page load
+// Add click event listener to the home button
+homeButton.addEventListener("click", () => {
+  showSection("home-section"); // Show the home section
+  updateLinkIndicator("Home"); // Update the link indicator to "Home"
+
+  // Remove the active class from all links
+  navLinks.forEach((link) => link.classList.remove("active"));
+});
+
+// Show the default section (Home) on page load
 document.addEventListener("DOMContentLoaded", () => {
-  showSection("bio");
-  updateLinkIndicator("Bio");
+  const loadingScreen = document.getElementById("loading-screen");
+
+  // Hide the loading screen after a short delay
+  setTimeout(() => {
+    loadingScreen.classList.add("hidden");
+  }, 100); // Adjust the delay as needed
+
+  showSection("home-section"); // Set "home" as the default section
+  updateLinkIndicator("Home");
 });
