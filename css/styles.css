@@ -11,23 +11,25 @@ body {
 
 h1 {
   font-family: "Spline Sans Mono", monospace;
-  font-style: italic;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 30px;
   text-align: center;
 }
 
 h3 {
+  text-align: justify;
   margin-top: 50px;
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 section {
@@ -38,7 +40,7 @@ section {
 .bio-header {
   margin-top: 100px;
   display: block;
-  padding: 2px 4px;
+  padding: 2px 20px;
   border-radius: 10px;
   background-color: hsl(255, 30%, 20%);
   color: hsl(255, 20%, 95%);
