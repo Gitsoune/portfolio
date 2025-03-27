@@ -2,14 +2,46 @@
 
 body {
   margin: 0;
+  padding-top: 100px;
   font-family: "Spline Sans", sans-serif;
   font-optical-sizing: auto;
-  color: #0a0a0a;
-  background-color: hsl(255, 20%, 95%);
+  color: hsl(255, 30%, 90%);
+  background-color: hsl(255, 30%, 10%);
+}
+
+h1 {
+  font-family: "Spline Sans Mono", monospace;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 4em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 section {
+  margin: auto;
   width: 80vw;
+}
+
+.bio-header {
+  margin-top: 100px;
+  display: block;
+  padding: 2px 4px;
+  border-radius: 10px;
+  background-color: hsl(255, 30%, 20%);
+  color: hsl(255, 20%, 95%);
 }
 
 .contact-buttons {
