@@ -18,18 +18,25 @@ h1 {
 }
 
 h2 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: end;
+}
+
+h3 {
   font-size: 1.2em;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
 }
 
-h3 {
-  text-align: justify;
-  margin-top: 50px;
+h4 {
   font-size: 1em;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 0 4px;
 }
 
 section {
@@ -38,12 +45,22 @@ section {
 }
 
 .bio-header {
-  margin-top: 100px;
+  margin-top: 120px;
   display: block;
   padding: 2px 20px;
   border-radius: 10px;
   background-color: hsl(255, 30%, 20%);
-  color: hsl(255, 20%, 95%);
+}
+
+.bio-container {
+  background-color: hsl(255, 30%, 90%);
+  color: hsl(255, 30%, 10%);
+  width: 100vw;
+  position: relative;
+  padding: 30px 10vw;
+  left: -10vw;
+  margin-top: -54px;
+  box-sizing: border-box;
 }
 
 .contact-buttons {
