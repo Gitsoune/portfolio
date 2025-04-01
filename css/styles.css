@@ -5,8 +5,8 @@ body {
   padding-top: 100px;
   font-family: "Spline Sans", sans-serif;
   font-optical-sizing: auto;
-  color: hsl(255, 30%, 90%);
-  background-color: hsl(255, 30%, 10%);
+  color: hsl(255, 100%, 90%);
+  background-color: hsl(255, 20%, 30%);
 }
 
 h1 {
@@ -52,6 +52,7 @@ section {
   padding: 6px 20px;
   border-radius: 10px;
   background-color: hsl(255, 30%, 20%);
+  box-shadow: 0 0 10px hsl(255, 30%, 20%);
 }
 
 .bio-container {
