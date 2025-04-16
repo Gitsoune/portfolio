@@ -1,19 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&display=swap");
 body {
   margin: 0;
   padding-top: 100px;
-  font-family: "Spline Sans", sans-serif;
+  font-family: "Special Gothic Expanded One", sans-serif;
   font-optical-sizing: auto;
-  color: hsl(255, 100%, 90%);
-  background-color: hsl(255, 20%, 30%);
+  color: black;
+  /* background-color: rgb(252, 238, 10); */
+  background-color: rgba(255, 250, 250);
 }
 
 h1 {
-  font-family: "Spline Sans Mono", monospace;
-  font-weight: 700;
-  font-size: 3.5em;
-  letter-spacing: -2px;
+  font-size: 3em;
   margin: 0;
   text-align: center;
 }
@@ -26,9 +23,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
-  line-height: 30px;
   text-align: center;
 }
 
@@ -38,11 +34,22 @@ h4 {
   font-weight: 400;
   letter-spacing: 0.5px;
   padding: 0 4px;
+  font-family: "Spline Sans", sans-serif;
 }
 
 section {
-  margin: auto;
-  width: 80vw;
+  margin-right: 50px;
+  /* width: 80vw; */
+}
+
+.sidebar {
+  background-color: transparent;
+  border-left: black 1px solid;
+  width: 50px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .bio-header {
@@ -50,20 +57,15 @@ section {
   margin-bottom: 50px;
   display: block;
   padding: 6px 20px;
-  border-radius: 10px;
-  background-color: hsl(255, 30%, 20%);
-  box-shadow: 0 0 10px hsl(255, 30%, 20%);
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
 }
 
 .bio-container {
-  background-color: hsl(255, 30%, 90%);
-  color: hsl(255, 30%, 10%);
-  width: 100vw;
-  position: relative;
-  padding: 100px 10vw;
-  left: -10vw;
+  background-color: rgb(10, 10, 20);
+  color: rgb(255, 250, 250);
+  padding: 100px 0;
   margin-top: -54px;
-  box-sizing: border-box;
 }
 
 .bio-section > h4 {
@@ -97,15 +99,6 @@ section {
   position: relative; /* For positioning the parallax image */
 }
 
-.parallax-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Ensure the image stays within the link bounds */
-}
-
 .project-image {
   width: 100%;
   height: auto;
@@ -135,7 +128,6 @@ section {
 #contact {
   background-color: hsl(255, 30%, 90%);
   color: hsl(255, 30%, 10%);
-  width: 100vw;
   position: relative;
   padding: 100px 10vw;
   box-sizing: border-box;
@@ -174,14 +166,4 @@ section {
 
 /* Styles for larger screens */
 @media (min-width: 768px) {
-  .contact-buttons {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .contact-button {
-    width: 400px;
-    padding: 20px 40px;
-  }
 }
