@@ -97,6 +97,25 @@ section#bio h4:last-of-type {
   padding: 100px 0;
 }
 
+.skills-content {
+  margin-top: 200px;
+}
+
+.front-icon,
+.back-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 15px;
+}
+
+.front-icon img,
+.back-icon img {
+  height: 70px;
+  filter: brightness(0) saturate(100%) invert(30%) sepia(43%) saturate(3000%)
+    hue-rotate(241deg) brightness(104%) contrast(101%);
+}
+
 #projects {
   background-color: rgb(10, 10, 20);
   color: rgb(255, 250, 250);
