@@ -1,0 +1,3 @@
+- [x] add a skills section
+- [ ] language, framework list of icon, front on top to back at the end
+- [ ] developed communication skill through team project while doing my BTS and currently during my formation at Zone01
